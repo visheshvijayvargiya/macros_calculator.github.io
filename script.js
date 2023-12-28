@@ -11,12 +11,14 @@
 function macrosAlgorithm() {
     // getting input and storing into a variable
     const userWeight = parseFloat(document.getElementById("weight").value);
+    const macrosPer100gCalories = parseFloat(document.getElementById("calories").value);
     const macrosPer100gProtein = parseFloat(document.getElementById("protein").value);
     const macrosPer100gFat = parseFloat(document.getElementById("fats").value);
     const macrosPer100gCarbs = parseFloat(document.getElementById("carbs").value);
     const macrosPer100gFibre = parseFloat(document.getElementById("fibre").value);
 
     // formula to process input
+    const calculatedCalories = (userWeight / 100) * macrosPer100gCalories;
     const calculatedProtein = (userWeight / 100) * macrosPer100gProtein;
     const calculatedFat = (userWeight / 100) * macrosPer100gFat;
     const calculatedCarbs = (userWeight / 100) * macrosPer100gCarbs;
@@ -26,7 +28,8 @@ function macrosAlgorithm() {
     // output
     const resultDiv = document.getElementById("result");
     resultDiv.innerHTML = 
-    `<p>Macros for ${userWeight}g of the food item</p> 
+    `<p>Macros for ${userWeight}g of the food item</p>
+    <p>Calories: ${calculatedCalories}g</p> 
     <p>Protein: ${calculatedProtein}g</p> 
     <p>Carbs: ${calculatedCarbs}g</p> 
     <p>Fats: ${calculatedFat}g</p>
