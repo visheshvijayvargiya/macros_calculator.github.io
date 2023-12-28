@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="shortcut icon" type="x-icon" href="calculator.png">
+</head>
+<body>
+    <nav class="nav">
+        Macros Calculator
+    </nav>
+
+    <div class="whole">
+        <form class="form" onsubmit="return false;">
+            <label for="weight" class="labels">Weight</label>
+            <input type="text" id="weight" class="nutrition" name="weight">
+    
+            <br>
+    
+            <label for="protein" class="labels">Protein</label>
+            <input type="text" id="protein" class="nutrition" name="protein">
+    
+            <br>
+    
+            <label for="calories" class="labels">Calories</label>
+            <input type="text" id="calories" class="nutrition" name="calories">
+    
+            <br>
+    
+            <label for="carbs" class="labels">Carbs</label>
+            <input type="text" id="carbs" class="nutrition" name="carbs">
+    
+            <br>
+    
+            <label for="fats" class="labels">Fats</label>
+            <input type="text" id="fats" class="nutrition" name="fats">
+    
+            <br>
+    
+            <label for="fibre" class="labels">Fibre</label>
+            <input type="text" id="fibre" class="nutrition" name="fibre">
+    
+            <br>
+    
+            <button type="submit" class="button" onclick="macrosAlgorithm()">Submit</button>
+    
+        </form>
+    
+        <div id="result" class="result"></div>
+    </div>
+</body>
+</html>
