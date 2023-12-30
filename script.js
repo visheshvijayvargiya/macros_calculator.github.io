@@ -29,7 +29,7 @@ function macrosAlgorithm() {
     const resultDiv = document.getElementById("result");
     resultDiv.innerHTML = 
     `<p>Macros for ${userWeight}g of the food item</p>
-    <p>Calories: ${calculatedCalories}g</p> 
+    <p>Calories: ${calculatedCalories}kcal</p> 
     <p>Protein: ${calculatedProtein}g</p> 
     <p>Carbs: ${calculatedCarbs}g</p> 
     <p>Fats: ${calculatedFat}g</p>
